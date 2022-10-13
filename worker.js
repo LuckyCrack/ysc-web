@@ -19,6 +19,7 @@ onmessage = function(event) {
                     rand_array = [];
                 }
             }
+            console.log("Rand Array :"+rand_array);
             fetches.push(
             fetch('https://api.socialcounts.org/youtube-live-subscriber-count/'+data[i], {mode: 'cors'})
             .then(res => {return res.json(); })

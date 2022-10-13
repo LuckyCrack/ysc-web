@@ -121,7 +121,15 @@ jQuery(document).ready(function () {
                     $("#channelsList2 .channelCard").removeClass('animatedEl');
                     $("#channelsList2 .channelCard:first-child").addClass('animatedEl');
                     var n_id = $('#channelsList2 .channelCard:last-child').attr('id');
+                    var data_sortt = $('#channelsList2 .channelCard:last-child').attr('data-sort');
                     var selector3 = "#"+n_id+"_subcount";
+                    var el = document.querySelector(selector3);
+                    new Odometer({
+                        el: el,
+                        duration: 1000,
+                        value: data_sortt,
+                        format: '(,ddd)',
+                    }); 
                 }
             });
         }
