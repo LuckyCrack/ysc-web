@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-color: #dedede;
+  overflow: hidden;
+}
+.main-wrapper
+{
+  display: flex;
+  flex-direction: row;
+  height: 950px;
+  overflow: hidden;
+}
+.top-title
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+.text-t
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+.top-title h3
+{
+  font-weight: 600;
+  font-size: 3.75rem;
+  color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+      width: 83%;
+text-align: center;
+padding: 5px 8px;
+}
+.l_counter
+{
+  margin-top: -8px;
+  width: 17%;
+  padding-left: 6px;
+}
+.l_counter .text-c
+{
+  margin-left: 8px;
+  color: #555555;
+}
+.l_counter h4
+{
+  margin-bottom: 0;
+}
+#videoplayer
+{
+  position: absolute;
+  z-index: -10;
+}
+#channelsList
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 83%;
+}
+#channelsList2 .channelCard
+{
+  margin-bottom: 10px;
+}
+.animatedEl
+{
+  transform-origin: top center;
+  -webkit-transform: translate3d(0,0,0);
+  animation: scrollAnim 4.4s linear infinite; 
+}
+@keyframes scrollAnim {
+ 0% {
+    margin-top: 10px;
+    /* transform: translateY(0); */
+    /* -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); */
+ }
+ 100% {
+    margin-top: -85px;
+    /* transform: translateY(-4750px); */
+    /* -webkit-transform: translateY(-95px);
+    -moz-transform: translateY(-95px);
+    -ms-transform: translateY(-95px);
+    -o-transform: translateY(-95px);*/
+    /* transform: translateY(-95px); */
+    /* background-color: red;*/
+ }
+}
+.channelCard, .channelCard_clone
+{
+  background-color: #ffffff;
+  height: 85px;
+  /* max-width: 25%; */
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 15px;
+  margin: 5px;
+  /* box-shadow: 0 5px 10px 2px #e9e9e9; */
+}
+.thumbnail
+{
+  height: 75px;
+  border-radius: 100px;
+  border: 2px solid #f1f1f1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.count_holder
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+.channel_title
+{
+    font-size: 16px;
+}
+.subcount
+{
+  font-size: 22px;
+  font-weight: 600;
+  will-change: transform;
+}
+.data_holder
+{
+  width: 175px;
+}
+.modal
+{
+  background-color: #dedede;
+}
+.modal-dialog
+{
+  box-shadow: 0 2px 15px -5px #505050 !important;
+}
